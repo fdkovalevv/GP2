@@ -53,8 +53,7 @@
 * **distance_to_center_km:** Расстояние до центра Москвы.
 
 ### Пропущенные значения
-
-![Диаграмма пропущенных значений](images/photo_2025-03-04 15.20.43.jpeg)
+![Image alt](https://github.com/fdkovalevv/GP2/raw/develop/images/Диаграмма_пропусков.png)
 
 ## Установка зависимостей
 
