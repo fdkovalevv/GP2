@@ -20,6 +20,38 @@
 * **2GIS_final_filtered.csv:** Итоговый датасет, содержащий собранные и обработанные данные.
 * **requirements.txt:** Файл со списком необходимых библиотек.
 
+### Пропущенные значения до очистки и заполнения
+![Image alt](https://github.com/fdkovalevv/GP2/raw/develop/images/До_очистки.jpeg)
+
+### Описание данных после извлечения с 2GIS и Яндекс.Карт
+* **Address_comment:** Номер этажа, на котором находится ресторан.
+* **address_name:** Адрес заведения.
+* **building_name:** Тип здания, в котором расположен ресторан.
+* **Restaurant_name:** Название ресторана.
+* **Brief_description:** Краткое описание ресторана.
+* **point:** Географические координаты (долгота и широта).
+* **postcode:** Почтовый индекс.
+* **Count_branches:** Количество филиалов.
+* **Type_of_institution:** Категории заведения (по данным 2GIS).
+* **general_rating:** Рейтинг ресторана (филиала).
+* **general_review_count:** Количество текстовых отзывов.
+* **general_review_count_with_stars:** Количество оценок.
+* **org_rating:** Рейтинг организации (всех филиалов).
+* **org_review_count:** Суммарное количество текстовых отзывов.
+* **org_review_count_with_stars:** Суммарное количество оценок.
+* **working_days:** График работы (дни).
+* **working_hours:** График работы (часы).
+* **restaurant_category:** Категории заведения (по данным Яндекс.Карт).
+* **transport_connection:** Информация о транспортной доступности (метро, автобус).
+* **Cusiene:** Тип кухни.
+* **Average_bill:** Диапазон среднего чека.
+* **Price_level:** Уровень цен.
+
+### Пропущенные значения после очистки и заполнения
+![Image alt](https://github.com/fdkovalevv/GP2/raw/develop/images/После_очистки_1.jpeg)
+![Image alt](https://github.com/fdkovalevv/GP2/raw/develop/images/После_очистки_2.jpeg)
+
+
 ## Описание датасета (2GIS_final_filtered.csv)
 
 Датасет содержит следующие столбцы:
@@ -53,8 +85,6 @@
 * **is_restaurant, is_cafe, is_coffee_shop, is_bar, is_bakery, is_other:** Флаги категорий заведения.
 * **distance_to_center_km:** Расстояние до центра Москвы.
 
-### Пропущенные значения
-![Image alt](https://github.com/fdkovalevv/GP2/raw/develop/images/Диаграмма_пропусков.png)
 
 ## Установка зависимостей
 
@@ -80,3 +110,4 @@ pip install -r requirements.txt
 6. Запустите ноутбук parser.ipynb для парсинга данных с Яндекс.Карт.
 7. Запустите ноутбук ГП_2_обработка_данных.ipynb для очистки и обработки данных.
 8. Изучите итоговый датасет 2GIS_final_filtered.csv.
+9. Запустите GP2_EDA.ipynb для построения графиков и просмотра выводов.
